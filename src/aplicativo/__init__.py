@@ -15,7 +15,7 @@ class Aplicativo:
         self.banco = NoteBanco()
         # Acessa o arquivo glade
         self.builder = Gtk.Builder()
-        self.builder.add_from_file('tela/tela_principal_v1.glade')
+        self.builder.add_from_file('src/tela/tela_principal_v1.glade')
         self.builder.connect_signals(self)
 
         # Acessa a tela principal
@@ -25,8 +25,12 @@ class Aplicativo:
     def note_foco(self, widget, none, null):
         self.banco.foco_banco(self.builder)
 
+    # Tela do Banco
     def banco_monta_cadastro(self, widget):
         self.banco.cadastro_banco(self.builder)
+
+    def banco_insert_cadastro(self,widget):
+        self.banco.insert_cadastro_banco(self.builder)
 
     # Fecha o programa
     def sairTelaPrincipal(self, widget):

@@ -297,6 +297,7 @@
                     <property name="use-underline">True</property>
                     <property name="image-position">top</property>
                     <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="banco_insert_cadastro" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">432</property>
@@ -492,7 +493,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="txt_banco_conta">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                             <property name="text" translatable="yes">DIGITE SUA CONTA</property>
@@ -531,7 +532,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="txt_banco_agencia">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                             <property name="text" translatable="yes">DIGITE SUA AGENCIA</property>
@@ -556,7 +557,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="txt_banco_tipo">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                             <property name="text" translatable="yes">CONTA CORRENTE OU POUPANÇA</property>

@@ -2,8 +2,10 @@ version: "2.1"
 services:
   postgres:
     image: postgres:12
-    env_file:
-      - .env
+    environment:
+      - POSTGRES_USER=financa
+      -  POSTGRES_PASSWORD=financa
+      - POSTGRES_DB=financa
 
     ports:
       - "5432:5432"
