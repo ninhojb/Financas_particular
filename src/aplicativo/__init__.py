@@ -6,7 +6,7 @@ import gi
 
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
-from aplicativo.note_banco import NoteBanco
+from src.aplicativo.note_banco import NoteBanco
 
 
 class Aplicativo:
