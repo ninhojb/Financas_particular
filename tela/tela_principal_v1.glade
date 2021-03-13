@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkImage" id="img_botao_banco">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/bancos1.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/bancos1.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco10">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/editar.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco11">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/localizar.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco12">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/salvar.jpg</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco13">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/excluir.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco14">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/hist.jpg</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco15">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/sair.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco2">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/novo.jpeg</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco3">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/editar.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco4">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/localizar.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco5">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/salvar.jpg</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco6">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/excluir.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco7">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/hist.jpg</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco8">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/sair.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_banco9">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/bancos1.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_carro">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/novo.jpeg</property>
+  </object>
+  <object class="GtkImage" id="img_botao_cartoes">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/cartoes.png</property>
+  </object>
+  <object class="GtkImage" id="img_botao_despesas_felx">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/despesas_flex.jpg</property>
+  </object>
+  <object class="GtkImage" id="img_botao_despesas_fixas">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/despesas.png</property>
+  </object>
+  <object class="GtkImage" id="img_botao_despesas_fixas1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/salvar.jpg</property>
+  </object>
+  <object class="GtkImage" id="img_botao_despesas_fixas2">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/localizar.png</property>
+  </object>
+  <object class="GtkImage" id="img_botao_invest1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/editar.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_invest2">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/excluir.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_invest3">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/sair.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_invest4">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/hist.jpg</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_resumo1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/resumo.jpeg</property>
+  </object>
+  <object class="GtkImage" id="img_botao_resumo2">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/novo.jpeg</property>
+  </object>
+  <object class="GtkWindow" id="tela_final">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Despesas Pessoais</property>
+    <property name="default-width">870</property>
+    <property name="default-height">600</property>
+    <property name="icon">imagem/rece.jpg</property>
+    <signal name="destroy" handler="sairTelaPrincipal" swapped="no"/>
+    <child>
+      <object class="GtkNotebook" id="note">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="has-tooltip">True</property>
+        <signal name="select-page" handler="note_foco" swapped="no"/>
+        <signal name="switch-page" handler="note_foco" swapped="no"/>
+        <child>
+          <object class="GtkFixed">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkImage">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="pixbuf">imagem/finan.png</property>
+              </object>
+              <packing>
+                <property name="x">31</property>
+                <property name="y">114</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkAccelLabel">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Finanças Pessoais</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold Italic 50"/>
+                  <attribute name="foreground" value="#1a1a5f5fb4b4"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">96</property>
+                <property name="y">13</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkAccelLabel">
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="label" translatable="yes">Criado por NED</property>
+                <attributes>
+                  <attribute name="font-desc" value="Sans Bold Italic 14"/>
+                  <attribute name="foreground" value="#c0c01c1c2828"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="x">680</property>
+                <property name="y">547</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Home</property>
+          </object>
+          <packing>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkPaned" id="pane_banco">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="botoes-banco">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="id_banco_cadastro">
+                    <property name="label" translatable="yes">Cadastro</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="banco_monta_cadastro" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_banco_novo">
+                    <property name="label" translatable="yes">Novo</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_resumo2</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">112</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_banco_salvar">
+                    <property name="label" translatable="yes">Salvar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_despesas_fixas1</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">432</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_banco_localilzar">
+                    <property name="label" translatable="yes">Localizar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_despesas_fixas2</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">325</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_banco_editar">
+                    <property name="label" translatable="yes">Editar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_invest1</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">219</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_banco_excluir">
+                    <property name="label" translatable="yes">Excluir</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_invest2</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">539</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_bancoexcluir">
+                    <property name="label" translatable="yes">Sair</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_invest3</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="sairTelaPrincipal" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">752</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_banco_hist">
+                    <property name="label" translatable="yes">Historico</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_invest4</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">646</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="tela_banco">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkImage" id="img_banco_tela">
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">imagem/banco_img.png</property>
+                  </object>
+                  <packing>
+                    <property name="x">291</property>
+                    <property name="y">100</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkLabel" id="id_banco_label">
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Banco</property>
+                    <attributes>
+                      <attribute name="font-desc" value="Sans Bold Italic 45"/>
+                      <attribute name="foreground" value="#000000000000"/>
+                    </attributes>
+                  </object>
+                  <packing>
+                    <property name="x">361</property>
+                    <property name="y">8</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFixed" id="tela_banco_cadastro">
+                    <property name="width-request">850</property>
+                    <property name="height-request">500</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkLabel" id="lb_banco_cadastro">
+                        <property name="width-request">100</property>
+                        <property name="height-request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Cadastro do Banco</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans Bold Italic 30"/>
+                          <attribute name="foreground" value="#1c1c7171d8d8"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="x">250</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <!-- n-columns=2 n-rows=4 -->
+                      <object class="GtkGrid">
+                        <property name="width-request">800</property>
+                        <property name="height-request">200</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="row-spacing">20</property>
+                        <property name="column-spacing">5</property>
+                        <property name="row-homogeneous">True</property>
+                        <property name="column-homogeneous">True</property>
+                        <property name="baseline-row">2</property>
+                        <child>
+                          <object class="GtkEntry" id="txt_banco_nome">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="text" translatable="yes">DIGITE O NOME DO BANCO</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Nome:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="text" translatable="yes">DIGITE SUA CONTA</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Conta:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Agencia:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="text" translatable="yes">DIGITE SUA AGENCIA</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Tipo:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">3</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                            <property name="text" translatable="yes">CONTA CORRENTE OU POUPANÇA</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">3</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="x">-49</property>
+                        <property name="y">147</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="y">101</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkImage" id="img_banco_logo">
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">imagem/banco_img2.png</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="note_banco">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Banco</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkPaned" id="pane_invest">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="botoes_inves">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton" id="id_invest_cadastro">
+                    <property name="label" translatable="yes">Cadastro</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco1</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_invest_novo">
+                    <property name="label" translatable="yes">Novo</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco2</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">112</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_invest_editar">
+                    <property name="label" translatable="yes">Editar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco3</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">219</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_invest_loca">
+                    <property name="label" translatable="yes">Localizar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco4</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">325</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_invest_salvar">
+                    <property name="label" translatable="yes">Salvar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco5</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">432</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_invest_excluir">
+                    <property name="label" translatable="yes">Excluir</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco6</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">539</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_insvest_hist">
+                    <property name="label" translatable="yes">Historico</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco7</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">646</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_invest_sair">
+                    <property name="label" translatable="yes">Sair</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco8</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="sairTelaPrincipal" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">752</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="tela_inves">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkImage" id="img_invest_tela">
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">imagem/inves.jpg</property>
+                  </object>
+                  <packing>
+                    <property name="x">10</property>
+                    <property name="y">38</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="note_inves">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Investimentos</property>
+          </object>
+          <packing>
+            <property name="position">2</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkPaned" id="pane_receita">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="botoes_receita">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label" translatable="yes">Novo</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_carro</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">112</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_receita_cadastro">
+                    <property name="label" translatable="yes">Cadastro</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco9</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">5</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_receita_editar">
+                    <property name="label" translatable="yes">Editar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco10</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">219</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_receita_loca">
+                    <property name="label" translatable="yes">Localizar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco11</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">325</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_receita_salvar">
+                    <property name="label" translatable="yes">Salvar</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco12</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">432</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_receita_excluir">
+                    <property name="label" translatable="yes">Excluir</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco13</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">539</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_receita_hist">
+                    <property name="label" translatable="yes">Historico</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco14</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">646</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkButton" id="id_receita_sair">
+                    <property name="label" translatable="yes">Sair</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_banco15</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="sairTelaPrincipal" swapped="no"/>
+                  </object>
+                  <packing>
+                    <property name="x">752</property>
+                    <property name="y">10</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="tela_receita">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkImage">
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="pixbuf">imagem/rece.jpg</property>
+                  </object>
+                  <packing>
+                    <property name="x">210</property>
+                    <property name="y">109</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="note_receita">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Receita</property>
+          </object>
+          <packing>
+            <property name="position">3</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkPaned" id="pane_despesas_fixas">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="botoes_despesasa_fixas">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label" translatable="yes">Despesas
+    Fixas</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_despesas_fixas</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">7</property>
+                    <property name="y">7</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="tela_despesas_fixas">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="note_despesas_fixas">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Despesas_Fixas</property>
+          </object>
+          <packing>
+            <property name="position">4</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkPaned" id="pane_despesas_flex">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="botoes_despesas_flex">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label" translatable="yes">Despesas
+ Flexiveis</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_despesas_felx</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">7</property>
+                    <property name="y">7</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="tela_despesas_flex">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">5</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Despesas_Flex</property>
+          </object>
+          <packing>
+            <property name="position">5</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkPaned" id="pane_cartoes">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="orientation">vertical</property>
+            <child>
+              <object class="GtkFixed" id="botoes_cartoes">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label" translatable="yes">Cartoes</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_cartoes</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">7</property>
+                    <property name="y">7</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="tela_cartoes">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">6</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Cartoes</property>
+          </object>
+          <packing>
+            <property name="position">6</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkPaned" id="pane_resumo">
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <child>
+              <object class="GtkFixed" id="botoes_resumo">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <child>
+                  <object class="GtkButton">
+                    <property name="label" translatable="yes">Resultado</property>
+                    <property name="width-request">100</property>
+                    <property name="height-request">80</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">True</property>
+                    <property name="image">img_botao_resumo1</property>
+                    <property name="use-underline">True</property>
+                    <property name="image-position">top</property>
+                    <property name="always-show-image">True</property>
+                  </object>
+                  <packing>
+                    <property name="x">10</property>
+                    <property name="y">20</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="resize">False</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkFixed" id="tela_resumo">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="resize">True</property>
+                <property name="shrink">True</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">7</property>
+          </packing>
+        </child>
+        <child type="tab">
+          <object class="GtkLabel" id="note_resumo">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Resumo</property>
+          </object>
+          <packing>
+            <property name="position">7</property>
+            <property name="tab-fill">False</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

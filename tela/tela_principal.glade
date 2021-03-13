@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkImage" id="img_botao_banco">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/bancos1.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_carro">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/receita1.png</property>
+  </object>
+  <object class="GtkImage" id="img_botao_cartoes">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/cartoes.png</property>
+  </object>
+  <object class="GtkImage" id="img_botao_despesas_felx">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/despesas_flex.jpg</property>
+  </object>
+  <object class="GtkImage" id="img_botao_despesas_fixas">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/despesas.png</property>
+  </object>
+  <object class="GtkImage" id="img_botao_home">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/home.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_home1">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/home.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkImage" id="img_botao_invest">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/inves1.png</property>
+    <property name="pixel-size">30</property>
+  </object>
+  <object class="GtkWindow" id="id_tela_inicial">
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Finanças Pessoais</property>
+    <property name="resizable">False</property>
+    <property name="default-width">1024</property>
+    <property name="default-height">710</property>
+    <property name="icon-name">preferences-desktop-screensaver</property>
+    <child>
+      <object class="GtkPaned">
+        <property name="visible">True</property>
+        <property name="can-focus">True</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkFixed" id="fixo_botoes">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Home</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_home</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">7</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Banco</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_banco</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">124</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Invest</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_invest</property>
+                <property name="use-underline">True</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">236</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Receita</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_carro</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">354</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Despesas
+    Fixas</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_despesas_fixas</property>
+                <property name="use-underline">True</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">469</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Despesas
+ Flexiveis</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_despesas_felx</property>
+                <property name="use-underline">True</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">574</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Cartoes</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_cartoes</property>
+                <property name="use-underline">True</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">683</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Resultado</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_resumo</property>
+                <property name="use-underline">True</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">794</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label" translatable="yes">Sair</property>
+                <property name="width-request">100</property>
+                <property name="height-request">80</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <property name="receives-default">True</property>
+                <property name="image">img_botao_sair</property>
+                <property name="use-underline">True</property>
+                <property name="image-position">top</property>
+                <property name="always-show-image">True</property>
+              </object>
+              <packing>
+                <property name="x">915</property>
+                <property name="y">7</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="resize">False</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkFixed" id="fixo_principal">
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <child>
+              <object class="GtkPaned">
+                <property name="width-request">1000</property>
+                <property name="height-request">600</property>
+                <property name="visible">True</property>
+                <property name="can-focus">True</property>
+                <child>
+                  <object class="GtkFixed" id="botoes_laterais">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkButton">
+                        <property name="label" translatable="yes">Home</property>
+                        <property name="width-request">100</property>
+                        <property name="height-request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">True</property>
+                        <property name="receives-default">True</property>
+                        <property name="image">img_botao_home1</property>
+                        <property name="image-position">top</property>
+                        <property name="always-show-image">True</property>
+                      </object>
+                      <packing>
+                        <property name="x">7</property>
+                        <property name="y">20</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="resize">False</property>
+                    <property name="shrink">True</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFixed" id="fixo_tela">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="resize">True</property>
+                    <property name="shrink">True</property>
+                  </packing>
+                </child>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="resize">True</property>
+            <property name="shrink">True</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkImage" id="img_botao_resumo">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/resumo.jpeg</property>
+  </object>
+  <object class="GtkImage" id="img_botao_sair">
+    <property name="visible">True</property>
+    <property name="can-focus">False</property>
+    <property name="pixbuf">imagem/sair.png</property>
+  </object>
+</interface>
