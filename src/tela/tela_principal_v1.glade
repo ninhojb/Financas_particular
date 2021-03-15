@@ -456,7 +456,7 @@
                       </packing>
                     </child>
                     <child>
-                      <!-- n-columns=2 n-rows=4 -->
+                      <!-- n-columns=2 n-rows=5 -->
                       <object class="GtkGrid">
                         <property name="width-request">800</property>
                         <property name="height-request">200</property>
@@ -468,10 +468,9 @@
                         <property name="column-homogeneous">True</property>
                         <property name="baseline-row">2</property>
                         <child>
-                          <object class="GtkEntry" id="txt_banco_nome">
+                          <object class="GtkEntry" id="txt_banco_codigo">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
-                            <property name="text" translatable="yes">DIGITE O NOME DO BANCO</property>
                           </object>
                           <packing>
                             <property name="left-attach">1</property>
@@ -482,7 +481,7 @@
                           <object class="GtkLabel">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Nome:</property>
+                            <property name="label" translatable="yes">Codigo do Banco:</property>
                             <attributes>
                               <attribute name="font-desc" value="Sans Bold Italic 20"/>
                             </attributes>
@@ -493,27 +492,12 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry" id="txt_banco_conta">
+                          <object class="GtkEntry" id="txt_banco_agencia">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
-                            <property name="text" translatable="yes">DIGITE SUA CONTA</property>
                           </object>
                           <packing>
                             <property name="left-attach">1</property>
-                            <property name="top-attach">2</property>
-                          </packing>
-                        </child>
-                        <child>
-                          <object class="GtkLabel">
-                            <property name="visible">True</property>
-                            <property name="can-focus">False</property>
-                            <property name="label" translatable="yes">Conta:</property>
-                            <attributes>
-                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
-                            </attributes>
-                          </object>
-                          <packing>
-                            <property name="left-attach">0</property>
                             <property name="top-attach">2</property>
                           </packing>
                         </child>
@@ -528,18 +512,55 @@
                           </object>
                           <packing>
                             <property name="left-attach">0</property>
+                            <property name="top-attach">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Nome</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
                             <property name="top-attach">1</property>
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry" id="txt_banco_agencia">
+                          <object class="GtkEntry" id="txt_banco_nome">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
-                            <property name="text" translatable="yes">DIGITE SUA AGENCIA</property>
                           </object>
                           <packing>
                             <property name="left-attach">1</property>
                             <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Conta:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">3</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="txt_banco_conta">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">3</property>
                           </packing>
                         </child>
                         <child>
@@ -553,24 +574,55 @@
                           </object>
                           <packing>
                             <property name="left-attach">0</property>
-                            <property name="top-attach">3</property>
+                            <property name="top-attach">4</property>
                           </packing>
                         </child>
                         <child>
                           <object class="GtkEntry" id="txt_banco_tipo">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
-                            <property name="text" translatable="yes">CONTA CORRENTE OU POUPANÇA</property>
                           </object>
                           <packing>
                             <property name="left-attach">1</property>
-                            <property name="top-attach">3</property>
+                            <property name="top-attach">4</property>
                           </packing>
                         </child>
                       </object>
                       <packing>
                         <property name="x">-49</property>
                         <property name="y">147</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="txt_banco_mensagem">
+                        <property name="width-request">100</property>
+                        <property name="height-request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans Bold Italic 17"/>
+                          <attribute name="foreground" value="#2e2ec2c27e7e"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="x">304</property>
+                        <property name="y">69</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkLabel" id="txt_banco_erro">
+                        <property name="width-request">100</property>
+                        <property name="height-request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans Bold Italic 17"/>
+                          <attribute name="foreground" value="#a5a51d1d2d2d"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="x">286</property>
+                        <property name="y">58</property>
                       </packing>
                     </child>
                   </object>

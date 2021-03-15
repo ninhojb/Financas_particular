@@ -23,7 +23,7 @@ sudo docker build -f docker-compose.yml
 
 
 echo "${PRE} UP docker compose"
-sudo docker-compose up -d
+sudo docker-compose up -d --remove-orphans
 
 
 

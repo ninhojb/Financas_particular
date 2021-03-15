@@ -5,15 +5,19 @@ import logging
 
 from psycopg2 import DatabaseError
 
+from src.database.tabelas import Tabela
+
 
 class FuncBanco:
 
     def __init__(self):
-        pass
+        conn = Tabela()
+        self.conn = conn.conexao
+        self.session = conn.session
 
-    def executar_insert(self, database, sql):
+    def executar_insert(self, sql):
         logging.info('[EXECUTAR_INSERT]')
-        _conn = database
+        _conn = self.conn
         try:
             resul = _conn.execute(sql)
 
@@ -22,9 +26,9 @@ class FuncBanco:
         except (Exception, DatabaseError) as error:
             return print(error)
 
-    def executar_select(self, database, sql):
+    def executar_select(self, sql):
         logging.info('[EXECUTAR_SELECT]')
-        _conn = database
+        _conn = self.conn
         try:
 
             resul = _conn.execute(sql)
@@ -33,3 +37,6 @@ class FuncBanco:
 
         except (Exception, DatabaseError) as error:
             return logging.info(error)
+
+    def session(self):
+        return self.session

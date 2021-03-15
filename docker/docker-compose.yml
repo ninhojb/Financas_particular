@@ -1,10 +1,12 @@
 version: "2.1"
 services:
   postgres:
-    image: postgres:12
+    image: postgres:12.1-alpine
+    volumes:
+      - ~/data/postgresql/data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=financa
-      -  POSTGRES_PASSWORD=financa
+      - POSTGRES_PASSWORD=financa
       - POSTGRES_DB=financa
 
     ports:
