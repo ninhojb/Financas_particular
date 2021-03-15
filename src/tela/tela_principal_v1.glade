@@ -687,7 +687,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkComboBox">
+                          <object class="GtkComboBox" id="combo_banco_novo">
                             <property name="visible">True</property>
                             <property name="can-focus">False</property>
                           </object>
@@ -711,7 +711,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="txt_banco_novo_agencia">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                           </object>
@@ -735,7 +735,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="txt_banco_novo_conta">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                           </object>
@@ -759,7 +759,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="txt_banco_novo_saldo">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                           </object>
@@ -783,7 +783,7 @@
                           </packing>
                         </child>
                         <child>
-                          <object class="GtkEntry">
+                          <object class="GtkEntry" id="txt_banco_novo_data">
                             <property name="visible">True</property>
                             <property name="can-focus">True</property>
                           </object>

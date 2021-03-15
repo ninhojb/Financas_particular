@@ -3,7 +3,7 @@ from datetime import date
 from gi.repository import Gtk
 
 from src.database.funcoes_banco_dados import FuncBanco
-from src.database.persistencia.schema_fin import Agencia
+from src.database.persistencia.schema_fin import Agencia, BancoSaldo
 
 
 class NoteBanco:
@@ -16,8 +16,11 @@ class NoteBanco:
         self.mensagem = self.builder.get_object('txt_banco_mensagem')
         self.mensagem_erro = self.builder.get_object('txt_banco_erro')
         self.mensagem_aviso = 'Favor preecher todos os dados'
+        self.id_banco = 1
+
 
     def foco_banco(self):
+
         self.novo = self.builder.get_object('tela_banco_cadastro')
         self.novo.set_visible(False)
         self.img = self.builder.get_object('img_banco_tela')
@@ -41,6 +44,15 @@ class NoteBanco:
         conta.set_text('')
         tipo = self.builder.get_object('txt_banco_tipo')
         tipo.set_text('')
+
+        agencia_novo = self.builder.get_object('txt_banco_novo_agencia')
+        agencia_novo.set_text('')
+        conta_novo = self.builder.get_object('txt_banco_novo_conta')
+        conta_novo.set_text('')
+        saldo_novo = self.builder.get_object('txt_banco_novo_saldo')
+        saldo_novo.set_text('')
+        data_novo = self.builder.get_object('txt_banco_novo_data')
+        data_novo.set_text('')
 
     def abrirTelaDialogo(self, msn):
         dialog = Gtk.MessageDialog(None, 0, Gtk.MessageType.INFO,
@@ -68,6 +80,8 @@ class NoteBanco:
         self.tela_novo = False
 
     def cadastro_novo(self):
+
+        self.comboNovoBanco()
         # Desativa o a imagem e monta os dados
         self.novo = self.builder.get_object('tela_banco_novo')
         self.novo.set_visible(True)
@@ -81,14 +95,16 @@ class NoteBanco:
         self.label_banco.set_visible(True)
         self.mensagem.set_text('')
         self.mensagem_erro.set_text('')
-        self.limpar_dados()
         self.tela_cadastro = False
-        self.tela_novo =True
+        self.tela_novo = True
 
     def insert_cadastro_novo(self):
+        if not self.tela_cadastro and not self.tela_novo:
+            self.abrirTelaDialogo('Favor clicar no botao cadastro ou novo')
+
         self.mensagem.set_text('')
         self.mensagem_erro.set_text('')
-        if self.tela_cadastro or self.tela_novo:
+        if self.tela_cadastro:
             self.banco = Agencia()
             codigo = self.builder.get_object('txt_banco_codigo')
             self.banco.codigo_banco = codigo.get_text()
@@ -100,26 +116,86 @@ class NoteBanco:
             self.banco.conta = conta.get_text()
             tipo = self.builder.get_object('txt_banco_tipo')
             self.banco.tipo_conta = tipo.get_text()
+
+            if self.banco.agencia and self.banco.codigo_banco and self.banco.nome and self.banco.tipo_conta != '':
+                try:
+                    self.banco.codigo_banco = int(self.banco.codigo_banco)
+                    self.banco.agencia = int(self.banco.agencia)
+                    self.banco.conta = int(self.banco.conta)
+                    self.session.add(self.banco)
+                    self.session.commit()
+                    self.mensagem.set_text('Dados inserido com sucesso')
+                    self.limpar_dados()
+
+
+                except Exception as err:
+                    self.abrirTelaDialogo(f'Erro :\n {err}')
+
+            else:
+                self.abrirTelaDialogo(self.mensagem_aviso)
+
+
+        if self.tela_novo:
+            self.saldo = BancoSaldo()
+
+            agencia = self.builder.get_object('txt_banco_novo_agencia')
+            self.saldo.agencia = agencia.get_text()
+            conta = self.builder.get_object('txt_banco_novo_conta')
+            self.saldo.conta = conta.get_text()
+            saldo = self.builder.get_object('txt_banco_novo_saldo')
+            self.saldo.saldo = saldo.get_text()
+            data = self.builder.get_object('txt_banco_novo_data')
+            self.saldo.dt_saldo = data.get_text()
+            self.saldo.id_banco = self.id_banco
+            print(self.saldo.id_banco)
+            print(self.saldo.dt_saldo)
+            if self.saldo.agencia and self.saldo.conta and self.saldo.saldo and self.saldo.dt_saldo != '':
+                try:
+                    self.saldo.id_banco = int(self.saldo.id_banco)
+                    self.saldo.agencia = int(self.saldo.agencia)
+                    self.saldo.conta = int(self.saldo.conta)
+
+                    self.session.add(self.saldo)
+                    self.session.commit()
+                    self.abrirTelaDialogo('Dados inserido com sucesso')
+                    self.limpar_dados()
+                except Exception as err:
+                    self.abrirTelaDialogo(err)
+            else:
+
+                self.abrirTelaDialogo(self.mensagem_aviso)
+
+    def comboNovoBanco(self):
+        self.valor_combo = self.builder.get_object('combo_banco_novo')
+        self.listaStoreComboNovo = Gtk.ListStore(int, int)
+
+        # precisa selecinar os dados da tabela Banco
+        combo = self.session.query(Agencia.id_banco, Agencia.codigo_banco)
+        for linha in combo:
+            self.listaStoreComboNovo.append(linha)
+
+        self.valor_combo.set_model(self.listaStoreComboNovo)
+        self.valor_combo.connect('changed', self.on_name_combo_changed)
+        renderer_text = Gtk.CellRendererText()
+        self.valor_combo.pack_start(renderer_text, True)
+        self.valor_combo.add_attribute(renderer_text, "text", 1)
+
+    def on_name_combo_changed(self, combo):
+        self.saldo = BancoSaldo()
+        tree_iter = combo.get_active_iter()
+        if tree_iter is not None:
+            model = combo.get_model()
+            self.id_banco, codigo_banco = model[tree_iter][:2]
+            dados = self.session.query(Agencia) \
+                .filter(Agencia.id_banco == self.id_banco)
+
+            for linha in dados:
+                agencia = self.builder.get_object('txt_banco_novo_agencia')
+                self.saldo.agencia = agencia.set_text(str(linha.agencia))
+
+                conta = self.builder.get_object('txt_banco_novo_conta')
+                self.saldo.conta = conta.set_text(str(linha.conta))
+
         else:
-            self.abrirTelaDialogo('Favor clicar no botao cadastro')
-
-        if self.banco.agencia and self.banco.codigo_banco and self.banco.nome and self.banco.tipo_conta != '':
-            try:
-                self.banco.codigo_banco = int(self.banco.codigo_banco)
-                self.banco.agencia = int(self.banco.agencia)
-                self.banco.conta = int(self.banco.conta)
-                self.session.add(self.banco)
-                self.session.commit()
-                self.session.query(Agencia)
-                self.mensagem.set_text('Dados inserido com sucesso')
-                self.limpar_dados()
-
-            except Exception as err:
-                self.mensagem_erro.set_text(f'Erro :\n {err}')
-
-        else:
-            self.abrirTelaDialogo(self.mensagem_aviso)
-
-
-    def inserir_d(self):
-        pass
+            entry = combo.get_child()
+            print(f"Entered: {entry.get_text()}")
