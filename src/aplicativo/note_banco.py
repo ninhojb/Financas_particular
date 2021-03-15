@@ -18,15 +18,16 @@ class NoteBanco:
         self.mensagem_aviso = 'Favor preecher todos os dados'
 
     def foco_banco(self):
-        self.cadastro = self.builder.get_object('tela_banco_cadastro')
-        self.cadastro.set_visible(False)
+        self.novo = self.builder.get_object('tela_banco_cadastro')
+        self.novo.set_visible(False)
         self.img = self.builder.get_object('img_banco_tela')
         self.img.set_visible(True)
         self.img2 = self.builder.get_object('img_banco_logo')
         self.img2.set_visible(False)
         self.label_banco = self.builder.get_object('id_banco_label')
         self.label_banco.set_visible(False)
-        self.vdd = False
+        self.tela_cadastro = False
+        self.tela_novo = False
 
     def limpar_dados(self):
         # limpa a tela de cadasto
@@ -50,8 +51,10 @@ class NoteBanco:
 
     def cadastro_banco(self):
         # Desativa o a imagem e monta os dados
-        self.cadastro = self.builder.get_object('tela_banco_cadastro')
-        self.cadastro.set_visible(True)
+        self.novo = self.builder.get_object('tela_banco_cadastro')
+        self.novo.set_visible(True)
+        self.novo = self.builder.get_object('tela_banco_novo')
+        self.novo.set_visible(False)
         self.img = self.builder.get_object('img_banco_tela')
         self.img.set_visible(False)
         self.img2 = self.builder.get_object('img_banco_logo')
@@ -61,37 +64,62 @@ class NoteBanco:
         self.mensagem.set_text('')
         self.mensagem_erro.set_text('')
         self.limpar_dados()
-        self.vdd = True
+        self.tela_cadastro = True
+        self.tela_novo = False
 
-    def insert_cadastro_banco(self):
+    def cadastro_novo(self):
+        # Desativa o a imagem e monta os dados
+        self.novo = self.builder.get_object('tela_banco_novo')
+        self.novo.set_visible(True)
+        self.novo = self.builder.get_object('tela_banco_cadastro')
+        self.novo.set_visible(False)
+        self.img = self.builder.get_object('img_banco_tela')
+        self.img.set_visible(False)
+        self.img2 = self.builder.get_object('img_banco_logo')
+        self.img2.set_visible(True)
+        self.label_banco = self.builder.get_object('id_banco_label')
+        self.label_banco.set_visible(True)
         self.mensagem.set_text('')
         self.mensagem_erro.set_text('')
-        try:
-            if self.vdd:
-                banco = Agencia()
-                codigo = self.builder.get_object('txt_banco_codigo')
-                banco.codigo_banco = int(codigo.get_text())
-                nome = self.builder.get_object('txt_banco_nome')
-                banco.nome = nome.get_text()
-                agencia = self.builder.get_object('txt_banco_agencia')
-                banco.agencia = int(agencia.get_text())
-                conta = self.builder.get_object('txt_banco_conta')
-                banco.conta = int(conta.get_text())
-                tipo = self.builder.get_object('txt_banco_tipo')
-                banco.tipo_conta = tipo.get_text()
+        self.limpar_dados()
+        self.tela_cadastro = False
+        self.tela_novo =True
 
-                if banco.agencia and banco.codigo_banco and banco.nome and banco.tipo_conta != '':
+    def insert_cadastro_novo(self):
+        self.mensagem.set_text('')
+        self.mensagem_erro.set_text('')
+        if self.tela_cadastro or self.tela_novo:
+            self.banco = Agencia()
+            codigo = self.builder.get_object('txt_banco_codigo')
+            self.banco.codigo_banco = codigo.get_text()
+            nome = self.builder.get_object('txt_banco_nome')
+            self.banco.nome = nome.get_text()
+            agencia = self.builder.get_object('txt_banco_agencia')
+            self.banco.agencia = agencia.get_text()
+            conta = self.builder.get_object('txt_banco_conta')
+            self.banco.conta = conta.get_text()
+            tipo = self.builder.get_object('txt_banco_tipo')
+            self.banco.tipo_conta = tipo.get_text()
+        else:
+            self.abrirTelaDialogo('Favor clicar no botao cadastro')
 
-                    self.session.add(banco)
-                    self.session.commit()
-                    self.session.query(Agencia)
-                    self.mensagem.set_text('Dados inserido com sucesso')
-                    self.limpar_dados()
-                else:
-                    self.abrirTelaDialogo(self.mensagem_aviso)
+        if self.banco.agencia and self.banco.codigo_banco and self.banco.nome and self.banco.tipo_conta != '':
+            try:
+                self.banco.codigo_banco = int(self.banco.codigo_banco)
+                self.banco.agencia = int(self.banco.agencia)
+                self.banco.conta = int(self.banco.conta)
+                self.session.add(self.banco)
+                self.session.commit()
+                self.session.query(Agencia)
+                self.mensagem.set_text('Dados inserido com sucesso')
+                self.limpar_dados()
 
-            else:
-                self.abrirTelaDialogo('Favor clicar no botao cadastro')
+            except Exception as err:
+                self.mensagem_erro.set_text(f'Erro :\n {err}')
 
-        except Exception as err:
-            self.mensagem_erro.set_text(f'Erro :\n {err}')
+        else:
+            self.abrirTelaDialogo(self.mensagem_aviso)
+
+
+    def inserir_d(self):
+        pass

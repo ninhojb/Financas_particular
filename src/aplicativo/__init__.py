@@ -26,11 +26,16 @@ class Aplicativo:
         self.banco.foco_banco()
 
     # Tela do Banco
-    def banco_monta_cadastro(self, widget):
+    def tela_banco_cadastro(self, widget):
         self.banco.cadastro_banco()
 
-    def banco_insert_cadastro(self, widget):
-        self.banco.insert_cadastro_banco()
+    def tela_banco_novo(self, widget):
+        self.banco.cadastro_novo()
+
+    def banco_insert_cadastro_novo(self, widget):
+        self.banco.insert_cadastro_novo()
+
+
 
     # Fecha o programa
     def sairTelaPrincipal(self, widget):

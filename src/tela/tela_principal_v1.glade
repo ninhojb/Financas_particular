@@ -260,7 +260,7 @@
                     <property name="image">img_botao_banco</property>
                     <property name="image-position">top</property>
                     <property name="always-show-image">True</property>
-                    <signal name="clicked" handler="banco_monta_cadastro" swapped="no"/>
+                    <signal name="clicked" handler="tela_banco_cadastro" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">5</property>
@@ -279,6 +279,7 @@
                     <property name="use-underline">True</property>
                     <property name="image-position">top</property>
                     <property name="always-show-image">True</property>
+                    <signal name="clicked" handler="tela_banco_novo" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">112</property>
@@ -297,7 +298,7 @@
                     <property name="use-underline">True</property>
                     <property name="image-position">top</property>
                     <property name="always-show-image">True</property>
-                    <signal name="clicked" handler="banco_insert_cadastro" swapped="no"/>
+                    <signal name="clicked" handler="banco_insert_cadastro_novo" swapped="no"/>
                   </object>
                   <packing>
                     <property name="x">432</property>
@@ -458,7 +459,7 @@
                     <child>
                       <!-- n-columns=2 n-rows=5 -->
                       <object class="GtkGrid">
-                        <property name="width-request">800</property>
+                        <property name="width-request">400</property>
                         <property name="height-request">200</property>
                         <property name="visible">True</property>
                         <property name="can-focus">False</property>
@@ -589,8 +590,8 @@
                         </child>
                       </object>
                       <packing>
-                        <property name="x">-49</property>
-                        <property name="y">147</property>
+                        <property name="x">180</property>
+                        <property name="y">140</property>
                       </packing>
                     </child>
                     <child>
@@ -637,6 +638,170 @@
                     <property name="can-focus">False</property>
                     <property name="pixbuf">imagem/banco_img2.png</property>
                   </object>
+                </child>
+                <child>
+                  <object class="GtkFixed" id="tela_banco_novo">
+                    <property name="width-request">850</property>
+                    <property name="height-request">500</property>
+                    <property name="can-focus">False</property>
+                    <child>
+                      <object class="GtkLabel" id="lb_banco_novo">
+                        <property name="width-request">100</property>
+                        <property name="height-request">80</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="label" translatable="yes">Cadastro de Saldo</property>
+                        <attributes>
+                          <attribute name="font-desc" value="Sans Bold Italic 30"/>
+                          <attribute name="foreground" value="#1c1c7171d8d8"/>
+                        </attributes>
+                      </object>
+                      <packing>
+                        <property name="x">250</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <!-- n-columns=2 n-rows=5 -->
+                      <object class="GtkGrid">
+                        <property name="width-request">400</property>
+                        <property name="height-request">200</property>
+                        <property name="visible">True</property>
+                        <property name="can-focus">False</property>
+                        <property name="row-spacing">20</property>
+                        <property name="column-spacing">5</property>
+                        <property name="row-homogeneous">True</property>
+                        <property name="column-homogeneous">True</property>
+                        <property name="baseline-row">2</property>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes"> Banco:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkComboBox">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkAccelLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Agencia:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Conta:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Saldo:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">3</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">3</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkAccelLabel">
+                            <property name="visible">True</property>
+                            <property name="can-focus">False</property>
+                            <property name="label" translatable="yes">Data:</property>
+                            <attributes>
+                              <attribute name="font-desc" value="Sans Bold Italic 20"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="left-attach">0</property>
+                            <property name="top-attach">4</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry">
+                            <property name="visible">True</property>
+                            <property name="can-focus">True</property>
+                          </object>
+                          <packing>
+                            <property name="left-attach">1</property>
+                            <property name="top-attach">4</property>
+                          </packing>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="x">241</property>
+                        <property name="y">134</property>
+                      </packing>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="y">101</property>
+                  </packing>
                 </child>
               </object>
               <packing>
