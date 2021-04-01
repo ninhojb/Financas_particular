@@ -18,7 +18,6 @@ class NoteBanco:
         self.mensagem_aviso = 'Favor preecher todos os dados'
         self.id_banco = 1
 
-
     def foco_banco(self):
 
         self.novo = self.builder.get_object('tela_banco_cadastro')
@@ -80,7 +79,6 @@ class NoteBanco:
         self.tela_novo = False
 
     def cadastro_novo(self):
-
         self.comboNovoBanco()
         # Desativa o a imagem e monta os dados
         self.novo = self.builder.get_object('tela_banco_novo')
@@ -134,7 +132,6 @@ class NoteBanco:
             else:
                 self.abrirTelaDialogo(self.mensagem_aviso)
 
-
         if self.tela_novo:
             self.saldo = BancoSaldo()
 
@@ -147,8 +144,7 @@ class NoteBanco:
             data = self.builder.get_object('txt_banco_novo_data')
             self.saldo.dt_saldo = data.get_text()
             self.saldo.id_banco = self.id_banco
-            print(self.saldo.id_banco)
-            print(self.saldo.dt_saldo)
+
             if self.saldo.agencia and self.saldo.conta and self.saldo.saldo and self.saldo.dt_saldo != '':
                 try:
                     self.saldo.id_banco = int(self.saldo.id_banco)
@@ -165,12 +161,48 @@ class NoteBanco:
 
                 self.abrirTelaDialogo(self.mensagem_aviso)
 
+    # Funçao editar
+    def banco_editar(self):
+        self.telaLocalizar = self.builder.get_object('tela_localizar')
+        self.telaLocalizar.show()
+
+    def localizar_ok(self):
+        codigo = self.builder.get_object('id_localizar_txt')
+        self.codigo = codigo.get_text()
+
+        if self.tela_cadastro:
+            sql = self.session.query(Agencia) \
+                .filter(Agencia.id_banco == self.codigo)
+
+            for dados in sql:
+                print(dados.codigo_banco, dados.nome, dados.agencia, dados.conta, dados.tipo_conta)
+                codigo = self.builder.get_object('txt_banco_codigo')
+                codigo.set_text(str(dados.codigo_banco))
+                nome = self.builder.get_object('txt_banco_nome')
+                nome.set_text(dados.nome)
+                agencia = self.builder.get_object('txt_banco_agencia')
+                agencia.set_text(str(dados.agencia))
+                conta = self.builder.get_object('txt_banco_conta')
+                conta.set_text(str(dados.conta))
+                tipo = self.builder.get_object('txt_banco_tipo')
+                tipo.set_text(dados.tipo_conta)
+
+        elif self.tela_novo:
+            sql = self.session.query(BancoSaldo) \
+                .filter(BancoSaldo.id_banco_saldo == self.codigo)
+
+            for dados in sql:
+                print(dados.id_banco, dados.agencia, dados.conta, dados.saldo, dados.dt_saldo)
+
+        self.telaLocalizar.hide_on_delete()
+
     def comboNovoBanco(self):
         self.valor_combo = self.builder.get_object('combo_banco_novo')
         self.listaStoreComboNovo = Gtk.ListStore(int, int)
 
-        # precisa selecinar os dados da tabela Banco
+        self.listaStoreComboNovo.clear()
         combo = self.session.query(Agencia.id_banco, Agencia.codigo_banco)
+
         for linha in combo:
             self.listaStoreComboNovo.append(linha)
 
@@ -198,4 +230,3 @@ class NoteBanco:
 
         else:
             entry = combo.get_child()
-            print(f"Entered: {entry.get_text()}")
