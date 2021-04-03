@@ -7,7 +7,7 @@ class Constantes(ABC):
 
 class ConexaoBanco:
     POSTGRES_HOST = 'localhost'
-    POSTGRES_PORT = '5432'
+    POSTGRES_PORT = '5435'
     POSTGRES_USER = 'financa'
     POSTGRES_PASSWD = 'financa'
     POSTGRES_DATABASE = 'financa'
